@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calloway’s - LandingPage</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div id="ball"></div>
+
+    <header>
+        <img src="logo_ico.png" id="logo_h">
+        <nav class="flex">
+            <ul class="menu flex">
+                <li class="link_h"><strong>Shoes</strong></li>
+                <li class="link_h">Clothes</li>
+                <li class="link_h">Acessories</li>
+                <li class="link_h">Find a Pop-Up Shops</li>
+            </ul>
+        </nav>
+            <img onclick="opner()" id="menu_img_s" src="menu_ico.png">
+
+    </header>
+    <ul class="menu sub">
+                
+        <li class="link_h"><strong>Shoes</strong></li>
+        <li class="link_h">Clothes</li>
+        <li class="link_h">Acessories</li>
+        <li class="link_h">Find a Pop-Up Shops</li>
+        <img onclick="closen()" width="20px" src="close_ico.png">
+</ul>
+
+    <main>
+        <div class="left">
+            <h1>We define fashion, <br>
+                You make the statement!</h1>
+            <p class="description l">Clothes that define your needs affordably.</p>
+            <button class="botao_primary">Shop Now</button>
+            <div class="link_redes">
+                <img class="link_rede" src="Facebook.png" alt="Facebook link">
+                <img class="link_rede" src="Instagram.png" alt="Instagram link">
+                <img class="link_rede" src="Twitter.png" alt="Twitter link">
+            </div>
+        </div>
+        <img id="banner_ico" src="banner_img.png">
+    </main>
+
+    <script>
+        // alert('Design Criado por: Victory Ogheneruemu, Disponivel em https://www.figma.com/file/7Nm8R9yvUiFXJf0P3AxZZZ/Pepsi-landing-page-(Community)?node-id=0%3A1')
+        let menu = document.getElementsByClassName('sub')[0];
+        let left = document.getElementsByClassName('left')[0]
+        function opner(){
+            menu.style.left = 'calc(100% - 60%)';
+        };
+        function closen(){
+            menu.style.left = '';
+        };
+        left.onclick = closen;
+</script>
+  </body>
+</html>
