@@ -47,6 +47,7 @@ header{
     padding:4rem 2rem;
     height: 100vh;
     display: none;
+    transition: 0.2s;
     width: 60%;
 }
 #menu_img_s{
